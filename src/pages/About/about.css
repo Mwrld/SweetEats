@@ -1,0 +1,81 @@
+.aboutBox{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+.aboutBox .navContainer{
+    position: absolute;
+    z-index: 10000;
+}
+.aboutBox .nav-left h3{
+    color: #fff;
+}
+.aboutBox .navContainer .nav-center a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: rgb(255, 255, 255, 0.8);
+    font-weight: medium;
+}
+.aboutBox .navContainer .nav-center a.active,
+.aboutBox .navContainer .nav-center .cartShow.active{
+    color: #fff;
+}
+
+.aboutBox .homeAboutBox{
+    height: max-content;
+    margin-top: 30px;
+    background: transparent;
+}
+.aboutBox .homeAboutImages .Img1,
+.aboutBox .homeAboutImages .Img4{
+    border: 2px solid #f96400;
+}
+.aboutBox.dark .homeAboutImages .Img2,
+.aboutBox.dark .homeAboutImages .Img3{
+    border: 2px solid #fff;
+}
+.aboutBox .homeAboutBox .homeAboutInfo{
+    color: #000;
+}
+.aboutBox.dark .homeAboutBox .Text{
+    color: #f96400;
+}
+.aboutBox.dark .homeAboutBox .homeAboutInfo{
+    color: #fff;
+}
+.aboutBox .homeAboutInfo h3{
+    border-left: 3px solid #000;
+}
+.aboutBox.dark .homeAboutInfo h3{
+    border-left: 3px solid #fff;
+}
+.aboutBox .homeAboutInfo .subText.none{
+    display: block;
+}
+.aboutBox .homeAboutInfo .moreAbout{
+    display: none;
+}
+.aboutBox .navOther .menuToggle{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+}
+
+
+
+@media screen and (max-width: 430px) {
+    .aboutBox .navContainer .nav-center a{
+        text-decoration: none;
+        margin: 0 10px;
+        color: rgb(0, 0, 0, 0.5);
+        font-weight: medium;
+    }
+    .aboutBox .navContainer .nav-center a.active,
+    .aboutBox .navContainer .nav-center .cartShow.active{
+        color: #000;
+    }   
+    .aboutBox .navContainer .nav-center a{
+        margin: 15px;
+    }
+    .aboutBox .navOther.active .menuToggle{
+        filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(312deg) brightness(100%) contrast(101%);   
+    }
+}

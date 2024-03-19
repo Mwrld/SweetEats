@@ -1,0 +1,215 @@
+.cartorder{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: row;
+    margin: 30px 5px;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.cartorder .cartImage{
+    width: 140px;
+    height: 130px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+.cartImage img{
+    width: 100%;
+    border-radius: 5px;
+}
+.cartorder .cartorderMainDetails{
+    position: relative;
+    margin-top: 5px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #7d7d7d;
+}
+.cartorder.dark .cartorderMainDetails{
+    color: #fff;
+}
+.cartorderMainDetails p{
+    font-size: medium;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.cartorderMainDetails .cartorderFunc{
+    margin-top: 20px;
+}
+.cartorderFunc span{
+    margin-left: 5px;
+}
+.cartorderFunc .cartorderWishListBtn,
+.cartorderFunc button{
+    position: relative;
+    color: #7d7d7d;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+.cartorder.dark .cartorderFunc .cartorderWishListBtn,
+.cartorder.dark .cartorderFunc button{
+    color: #fff;
+}
+.cartorderFunc .cartorderWishListBtn{
+    padding-left: 25px;
+}
+.cartorderWishListBtn .wishIcon{
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 14px;
+    height: 14px;
+    opacity: 0.5;
+}
+.cartorder.dark .cartorderWishListBtn .wishIcon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);
+}
+.cartorderWishListBtn.active .wishIcon{
+    filter: invert(35%) sepia(75%) saturate(6146%) hue-rotate(7deg) brightness(103%) contrast(105%);
+    opacity: 1;
+}
+.cartorder section{
+    top: 25px;
+    right: 10px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.cartorder section input{
+    width: 65px;
+    padding: 7px 15px;
+    text-align: left;
+    border-radius: 0;
+    border: 1px solid #000;
+    background: transparent;
+    box-shadow: 0 0 3px #cecece;
+    outline: none;
+}
+.cartorder.dark section input{
+    border: 1px solid #fff;
+    background: transparent;
+    box-shadow: 0 0 3px #131313;
+    color: #fff;
+}
+.cartorder section .price{
+    font-size: small;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.cartorder.dark section .price{
+    color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .cartorder{
+        position: relative;
+        width: 100%;
+        height: 120px;
+        margin: 30px 5px;
+        padding: 5px 10px;
+    }
+    .cartorder .cartImage{
+        width: 120px;
+        height: 110px;
+        border-radius: 5px;
+    }   
+    .cartorderMainDetails p{
+        margin-top: 5px;
+        font-size: small;
+    }
+    .cartorder section input{
+        font-size: small;
+        width: 60px;
+        padding: 5px 13px;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .cartorder{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        margin: 20px 5px;
+        padding: 5px 10px;
+    }
+    .cartorder .cartImage{
+        width: 100px;
+        height: 90px;
+        border-radius: 4px;
+    }   
+    .cartorderMainDetails p{
+        margin-top: 5px;
+        font-size: x-small;
+    }
+    .cartorderMainDetails .cartorderFunc{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cartorderFunc .cartorderWishListBtn,
+    .cartorderFunc button{
+        font-size: x-small;
+    }
+    .cartorder section input{
+        font-size: x-small;
+        width: 50px;
+        padding: 5px 13px;
+        border: 1px solid rgb(0, 0, 0, 0.3);
+    }
+    .cartorder section .price{
+        font-size: x-small;
+        margin-top: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .cartorder{
+        position: relative;
+        width: 100%;
+        height: 80px;
+        margin: 20px 5px;
+        padding: 5px;
+    }
+    .cartorder .cartImage{
+        width: 85px;
+        height: 65px;
+        border-radius: 4px;
+    }
+    .cartorderMainDetails .cartorderFunc{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cartorderFunc .cartorderWishListBtn,
+    .cartorderFunc button{
+        font-size: x-small;
+    }
+    .cartorder section input{
+        font-size: x-small;
+        width: 45px;
+        padding: 5px 8px;
+    }
+    .cartorder section .price{
+        font-size: x-small;
+        margin-top: 10px;
+    }
+    
+}

@@ -1,0 +1,173 @@
+.checkOutLeft{
+    width: 100%;
+    height: fit-content;
+    box-shadow: 2px -2px 3px rgb(206, 206, 206, 0.5);
+}
+.checkOutBox.dark .checkOutLeft{
+    box-shadow: 2px -2px 3px rgb(206, 206, 206, 0.1);
+    color: #fff;
+}
+.checkOutLeft .checkOutList{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    padding-right: 10px;
+}
+.checkOutList::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 2px;
+}
+.checkOutList::-webkit-scrollbar-thumb{
+    -webkit-appearance: none;
+    width: 2px;
+    background: #7d7d7d;
+}
+.checkOutList .cartorder{
+    width: 100%;
+    height: 70px;
+    margin: 25px 5px;
+    padding: 5px 10px;
+}
+.checkOutList .cartorder .cartImage{
+    width: 90px;
+    height: 80px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+.cartImage img{
+    width: 100%;
+    border-radius: 5px;
+}
+.checkOutList .cartorderMainDetails p{
+    font-size: small;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.checkOutBox.dark .checkOutList .cartorderMainDetails p{
+    color: #fff;
+}
+/* .checkOutList .cartorderMainDetails .cartorderFunc{
+    display: none;
+} */
+.checkOutList .cartorderMainDetails .cartorderFunc{
+    margin-top: 5px;
+    font-size: x-small;
+}
+.checkOutBox.dark .checkOutList .cartorderMainDetails .cartorderFunc{
+    color: #fff;
+}
+.checkOutList .cartorderFunc .cartorderWishListBtn,
+.checkOutList .cartorderFunc button{
+    font-size: x-small;
+}
+.checkOutBox.dark .checkOutList .cartorderFunc .cartorderWishListBtn,
+.checkOutBox.dark .checkOutList .cartorderFunc button{
+    color: #fff;
+}
+.checkOutList .cartorderWishListBtn .wishIcon{
+    width: 10px;
+    height: 10px;
+}
+.checkOutBox.dark .checkOutList .cartorderWishListBtn .wishIcon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+}
+.checkOutList .cartorder section{
+    top: 10px;
+    right: 10px;
+    margin-top: 5px;
+}
+.checkOutList .cartorder section input{
+    width: 50px;
+    padding: 5px 10px;
+    font-size: x-small;
+    border: 1px solid #cecece;
+}
+.checkOutBox.dark .checkOutList .cartorder section input{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.checkOutList .cartorder section .price{
+    font-size: small;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.checkOutBox.dark .checkOutList .cartorder section .price{
+    color: #fff;
+}
+.checkOutLeft .orderSummary{
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0px -3px 3px rgb(206, 206, 206, 0.3);
+}
+.checkOutBox.dark .checkOutLeft .orderSummary{
+    box-shadow: 0px -3px 3px rgb(206, 206, 206, 0.05);
+}
+.orderSummary .subTotal.coupon,
+.orderSummary .subTotal span.coupon{
+    color: #f96400;
+    margin-bottom: 15px;
+}
+.checkOutLeft .orderSummary .subTotal.Total{
+    font-weight: bolder;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.checkOutBox.dark .checkOutLeft .orderSummary .subTotal span,
+.checkOutBox.dark .checkOutLeft .orderSummary .subTotal,
+.checkOutBox.dark .checkOutLeft .orderSummary .subTotal.Total{
+    color: #fff;
+}
+.checkOutLeft .orderSummary .subTotal{
+    font-size: medium;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .checkOutLeft .orderSummary{
+        margin-top: 20px;
+        padding-top: 20px;
+        box-shadow: none;
+        border-top: 1px solid rgb(206, 206, 206, 0.4);
+    }
+    .orderSummary .subTotal.coupon,
+    .orderSummary .subTotal span.coupon{
+        margin-bottom: 10px;
+    }
+    .checkOutLeft .orderSummary .subTotal{
+        font-size: small;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .checkOutLeft{
+        width: 100%;
+        height: fit-content;
+        box-shadow: none;
+    }
+    .checkOutLeft .checkOutList{
+        padding-right: 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .checkOutLeft .orderSummary .subTotal{
+        font-size: x-small;
+    }
+    
+}

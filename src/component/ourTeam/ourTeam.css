@@ -1,0 +1,174 @@
+.teamBox{
+    width: 100%;
+    height: auto;
+    padding: 0px 10%;
+    margin-bottom: 30px;
+    margin-top: -60px;
+}
+.teamBox h3{
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+.teamBox.dark h3{
+    color: #fff;
+}
+.teamBox h3 span{
+    color: #f96400;
+}
+.teamBox .teamBoxList{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.teamBox .teamList{
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.teamList .teamPic{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    border: 3px solid #f96400;
+}
+.teamPic .teamPicBorder{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+.teamBox.dark .teamPic .teamPicBorder{
+    border: 10px solid #0e0e0e;
+}
+.teamPic img{
+    width: 120%;
+}
+.teamList h3{
+    margin-top: 10px;
+    height: 0;
+    font-size: large;
+}
+.teamList p{
+    margin-top: 5px;
+    font-size: small;
+    font-style: italic;
+}
+.teamBox.dark p{
+    color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .teamBox .teamList{
+        margin: 20px;
+    }
+    .teamList .teamPic{
+        width: 180px;
+        height: 180px;
+    }   
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .teamBox h3{
+        font-size: x-large;
+        margin-bottom: 20px;
+    }
+    .teamBox .teamList{
+        margin: 20px;
+    }
+    .teamList h3{
+        font-size: large;
+    }
+    .teamList p{
+        margin-top: 5px;
+        font-size: x-small;
+    }
+    .teamList .teamPic{
+        width: 150px;
+        height: 150px;
+        border: 1px solid #f96400;
+    }
+    .teamPic .teamPicBorder{
+        border: 6px solid #fff;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .teamBox h3{
+        font-size: x-large;
+        margin-bottom: 20px;
+    }
+    .teamBox .teamList{
+        margin: 20px;
+    }
+    .teamList h3{
+        font-size: large;
+    }
+    .teamList p{
+        margin-top: 5px;
+        font-size: x-small;
+    }
+    .teamList .teamPic{
+        width: 150px;
+        height: 150px;
+        border: 1px solid #f96400;
+    }
+    .teamPic .teamPicBorder{
+        border: 6px solid #fff;
+    }
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+    .teamBox{
+        padding: 50px 20px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .teamBox h3{
+        font-size: large;
+        margin-bottom: 15px;
+    }
+    .teamBox .teamList{
+        margin: 10px;
+    }
+    .teamList h3{
+        font-size: medium;
+    }
+    .teamList p{
+        margin-top: 5px;
+        font-size: x-small;
+    }
+    .teamList .teamPic{
+        width: 120px;
+        height: 120px;
+        border: 1px solid #f96400;
+    }
+    .teamPic .teamPicBorder{
+        border: 6px solid #fff;
+    }
+}

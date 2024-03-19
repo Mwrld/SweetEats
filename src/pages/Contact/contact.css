@@ -1,0 +1,359 @@
+.contactBox{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0;
+}
+.contactBox span{
+    font-size: small;
+}
+.contactBox .back{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.back .web-logo-icon{
+    height: 100%;
+    pointer-events: none;
+}
+.contactBox .contactForm{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 23.5%;
+    height: 75%;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 0 3px #7d7d7d;
+    display: flex;
+    flex-direction: column;
+}
+.contactBox.dark .contactForm{
+    background: #0e0e0e;
+    box-shadow: 0 0 3px #161616;
+}
+.contactForm span{
+    margin: 10px 0 30px 0;
+}
+.contactBox.dark .span{
+    color: #fff;
+}
+.contactForm input,
+.contactForm textarea{
+    resize: none;
+    margin: 15px 0;
+    border: none;
+    padding: 5px 0;
+    color: #000;
+    border-bottom: 1px solid #7d7d7d;
+    outline: none;
+    background: transparent;
+}
+.contactBox.dark .contactForm input,
+.contactBox.dark .contactForm textarea{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.contactForm textarea{
+    height: 30%;
+}
+.contactForm button{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: small;
+    padding: 0 20px;
+    color: #fff;
+    border: none;
+    background: #f96400;
+    cursor: pointer;
+}
+.contactForm button .sendIcon{
+    height: 80%;
+    margin: 0 5px;
+    margin-top: 3px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);
+}
+
+.contactBox .maps{
+    background: #f96400;
+    width: 100%;
+    height: 70%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+}
+.contactBox.dark .maps{
+    background: #161616;
+}
+.contactBox .maps::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.maps:active::before,
+.maps:hover::before{
+    z-index: -1;
+}
+.maps h3{
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+    font-size: xxx-large;
+    color: #fff;
+    -webkit-text-stroke: 1.5px #fff;
+    z-index: 10;
+}
+.maps:active h3,
+.maps:hover h3{
+    color: #000;
+    -webkit-text-stroke: 1.5px #000;
+
+}
+
+.contactBox .contactDetail{
+    width: 100%;
+    height: 25%;
+    padding: 20px 10%;
+    align-items: end;
+    justify-content: space-between;
+    display: flex;
+}
+
+.contactDetail section p{
+    margin-top: 20px;
+}
+.contactBox.dark .contactDetail{
+    color: #fff;
+}
+.contactDetail ul{
+    list-style: none;
+    display: flex;
+}
+.contactDetail ul li{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: flex;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.contactBox.dark .contactDetail ul li{
+    border: 1px solid #fff;
+}
+.contactDetail ul li .social-icon{
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 2.5px;
+}
+.contactBox.dark .contactDetail ul li .social-icon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+}
+.maps .webLogoBox{
+    position: absolute;
+    height: 30px;
+    align-items: center;
+    font-size: small;
+    display: flex;
+    z-index: 1000;
+    margin: 5px;
+    left: 10%;
+    top: 10px;
+    cursor: pointer;
+}
+.maps .webLogoBox h4{
+    color: #fff;
+}
+
+.maps .webLogoBox h4 span{
+    color: #000;
+}
+.maps:active .webLogoBox h4,
+.maps:hover .webLogoBox h4{
+    color: #000;
+}
+.maps:active .webLogoBox h4 span,
+.maps:hover .webLogoBox h4 span{
+    color: #f96400;
+}
+.maps .webLogoBox .web-logo-icon{
+    height: 100%;
+    margin-right: 5px;   
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+    }
+.maps:active .webLogoBox .web-logo-icon,
+.maps:hover .webLogoBox .web-logo-icon{
+    filter: invert(35%) sepia(75%) saturate(6146%) hue-rotate(7deg) brightness(103%) contrast(105%);
+}
+.maps .mapFrame{
+    width: 200%;
+    height: 250%;
+    border: 0;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .contactBox .contactForm{
+        right: 5%;
+        width: 26%;
+    }
+    .contactForm textarea{
+        height: 25%;
+    }
+    .contactForm button{
+        bottom: 7%;
+    }    
+    .maps h3{
+        font-size: xx-large;
+        -webkit-text-stroke: 0.5px #000;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .contactBox .contactForm{
+        right: 5%;
+        width: 32%;
+    }
+    .contactDetail ul li{
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+    .contactDetail ul li .social-icon{
+        margin-left: 2px;
+    }
+    .contactDetail section p{
+        margin-top: 15px;
+        font-size: small;
+    }
+    .contactDetail span{
+        font-size: x-small;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .contactBox .contactForm{
+        right: 5%;
+        width: 40%;
+    }
+    .contactForm input,
+    .contactForm textarea{
+        font-size: x-small;
+    }
+    .contactForm button{
+        height: 30px;
+        font-size: x-small;
+        padding: 0 15px;
+    }
+    .contactBox span{
+        font-size: x-small;
+    }
+    .maps h3{
+        bottom: 20px;
+        font-size: x-large;
+        -webkit-text-stroke: 0.5px #000;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .contactBox{
+        position: relative;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }    
+
+    .contactBox .contactForm{
+        position: relative;
+        right: 0;
+        width: 100%;
+        height: 400px;
+        padding: 10px 20px;
+        box-shadow: 0 0 0px #7d7d7d;
+    }
+    .contactBox .maps{
+        position: relative;
+        background: #f96400;
+        width: 100%;
+        height: 200px;
+    }
+
+    .maps h3{
+        bottom: 10px;
+        left: 5%;
+        font-size: x-large;
+        -webkit-text-stroke: 0px #000;
+    }
+    .contactForm button{
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        height: 35px;
+        font-size: x-small;
+        padding: 0 20px;
+    }
+    .contactForm button .sendIcon{
+        height: 60%;
+        margin-top: 2px;
+    }
+    .contactBox .contactDetail{
+        padding: 20px;
+    }    
+    .contactDetail ul li{
+        width: 15px;
+        height: 15px;
+        margin: 0 3px;
+        padding-left: 0.15px;
+    }
+    .contactDetail ul li .social-icon{
+        margin-left: 1.4px;
+    }
+    .contactDetail section p{
+        margin-top: 10px;
+        font-size: x-small;
+    }
+    .contactDetail span{
+        font-size: xx-small;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .maps .webLogoBox{
+        left: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .contactDetail ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactDetail ul li{
+        margin: 0 0 5px 0;
+    }
+}

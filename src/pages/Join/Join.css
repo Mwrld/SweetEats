@@ -1,0 +1,443 @@
+.forms{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 30px 10%;
+    overflow: hidden;
+}
+.forms .webLogoBox{
+    position: absolute;
+    height: 30px;
+    align-items: center;
+    font-size: small;
+    display: flex;
+    z-index: 1000;
+    margin: 5px;
+    cursor: pointer;
+}
+.forms .webLogoBox h4{
+    color: #fff;
+}
+.forms.active .webLogoBox h4{
+    color: #000;
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+}
+.forms.active.dark .webLogoBox h4{
+    color: #fff;
+}
+.forms.active .webLogoBox h4{
+    color: #000;
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+}
+.forms .webLogoBox h4 span{
+    color: #000;
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+}
+.forms.active .webLogoBox h4 span{
+    color: #f96400;
+}
+.forms .webLogoBox .back{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    background: transparent;
+    outline: transparent;
+    border: none;
+    cursor: pointer;
+}
+.forms .webLogoBox .web-logo-icon{
+    height: 100%;
+    margin-right: 5px;   
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+    pointer-events: none;
+}
+.forms.active .webLogoBox .web-logo-icon{
+    filter: invert(35%) sepia(75%) saturate(6146%) hue-rotate(7deg) brightness(103%) contrast(105%);
+}
+.forms .switchSlider{
+    position: absolute;
+    margin-left: -10px;
+    left: 10%;
+    width: 30%;
+    height: 90%;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    z-index: 10;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+}
+.switchSlider.active{
+    left : 62%;
+}
+.switchSlider::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    background: linear-gradient(90deg, #f96400, #fabe1a, #fabe1a);
+    z-index: 9;
+}
+.switchSlider.active::before{
+    content: "";
+    background: linear-gradient(90deg, #ff8500, #f96400, #f96400);
+    z-index: 9;
+}
+.forms .formLeftContain{
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    padding: 0 20%;
+    z-index: -100;
+    justify-content: center;
+    display: flex;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+}
+.forms.active .formLeftContain{
+    padding: 0px;
+    z-index: 1000;
+    opacity: 1;
+    justify-content: space-between;
+    display: flex;
+}
+.forms .formRightContain{
+    position: absolute;
+    width: 80%;
+    height: 92%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+}
+.forms.active .formRightContain{
+    opacity: 0;
+    z-index: -100;
+    justify-content: center;
+    display: flex;
+    padding: 0 50%;
+}
+.formRightContain .JoinForm,
+.formLeftContain .JoinForm{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+}
+
+.JoinForm h3{
+    font-size: 2.5em;
+    color: #f96400;
+    letter-spacing: 1.5px;
+    /* -webkit-text-stroke: 1px #f96400; */
+}
+.JoinForm .formlinks{
+    display: flex;
+    margin: 25px;
+}
+.formlinks li{
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #cecece;
+    display: flex;
+    padding: 7px;
+    cursor: pointer;
+}
+.forms.dark .formlinks li{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+}
+.JoinForm span{
+    color: #7d7d7d;
+    font-size: small;
+    margin-bottom: 10px;
+}
+.JoinForm .input{
+    position: relative;
+    width: 65%;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.forms.dark .JoinForm input{
+    color: #fff;
+}
+.input .input-logo-icon{
+    position: absolute;
+    height: 45%;
+    margin-top: 7px;
+    left: 20px;
+    opacity: 0.4;
+    z-index: 1;
+}
+.input input{
+    z-index: 0;
+    background: rgb(206, 206, 206, 0.2);
+    border: none;
+    outline: none;
+    padding-left: 45px;
+    height: 100%;
+    border-radius: 2px;
+}
+.forms.dark .input input{
+    background: rgb(206, 206, 206, 0.02);
+    box-shadow: 0 0 3px #131313;
+}
+.forms.dark .input .input-logo-icon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+}
+.JoinForm p{
+    margin: 20px 0 5px 0;
+    font-size: small;
+    border-bottom: 1px solid rgb(206, 206, 206, 0.4);
+    padding-bottom: 4px;
+}
+.forms.dark .JoinForm p{
+    color: #fff;
+}
+.JoinForm .submitForm{
+    margin: 20px 0;
+    text-transform: uppercase;
+    padding: 12px 60px;
+    font-size: small;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: #f96400;
+    color: #fff;
+    cursor: pointer;
+}
+.formRightContain .slider,
+.formLeftContain .slider{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+    z-index: 100;
+    color: #fff;
+}
+.slider h2{
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+.slider p{
+    width: 60%;
+    font-size: small;
+    margin-bottom: 40px;
+}
+.slider .switchLeft{
+    background: transparent;
+    /* border: 1px solid #000; */
+    border: none;
+    border-radius: 30px;
+    font-size: small;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    width: 50%;
+    height: 40px;
+    border: 1px solid #fff;    
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .slider h2{
+        font-size: x-large;
+    }
+    .JoinForm h3{
+        font-size: xx-large;
+    }    
+    .formlinks li{
+        margin: 0 5px;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    .slider p{
+        width: 60%;
+        font-size: small;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .slider p{
+        width: 60%;
+        font-size: x-small;
+        margin-bottom: 30px;
+    }
+    .slider .switchLeft{
+        border-radius: 20px;
+        font-size: x-small;
+        width: 60%;
+        height: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .forms{
+        padding: 20px;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 100% 100%;
+    }
+    .forms .switchSlider{
+        position: absolute;
+        margin-left: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        z-index: -2;
+    }
+    .forms .webLogoBox h4{
+        color: #000;
+    }
+    .forms .webLogoBox h4 span{
+        color: #f96400;
+    }
+    .forms .webLogoBox .web-logo-icon{
+        filter: invert(35%) sepia(75%) saturate(6146%) hue-rotate(7deg) brightness(103%) contrast(105%);
+    }
+    .forms .formRightContain{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: grid;
+        grid-template-rows: 80% 20%;
+        z-index: 100;
+    }
+    .forms.active .formLeftContain,
+    .forms .formLeftContain{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: grid;
+        grid-template-rows: 73% 27%;
+    }
+    .formRightContain .slider,
+    .formLeftContain .slider{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        z-index: 100;
+        color: #fff;
+    }
+    .slider h2{
+        display: none;
+    }
+    .slider .switchLeft{
+        color: #fff;
+        border: 1px solid #fff;    
+    }
+    .formRightContain .JoinForm,
+    .formLeftContain .JoinForm{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .JoinForm h3{
+        font-size: x-large;
+        color: #f96400;
+        letter-spacing: 1.5px;
+        /* -webkit-text-stroke: 1px #f96400; */
+    }
+    .JoinForm .formlinks{
+        margin: 15px;
+    }
+    .formlinks li{
+        margin: 0 5px;
+        width: 25px;
+        height: 25px;
+        padding: 4px;
+    }
+    .JoinForm .input{
+        height: 35px;
+        width: 100%;
+        margin: 7px;
+    }
+    .input .input-logo-icon{
+        position: absolute;
+        height: 45%;
+        margin-top: 7px;
+        left: 20px;
+        opacity: 0.4;
+        z-index: 1;
+    }
+    .formRightContain .JoinForm,
+    .formLeftContain .JoinForm{
+        width: 100%;
+        height: 100%;
+    }
+    .slider .switchLeft{
+        background: transparent;
+        /* border: 1px solid #000; */
+        border: none;
+        border-radius: 30px;
+    }
+    .JoinForm p{
+        margin: 20px 0 5px 0;
+        font-size: x-small;
+    }
+    .JoinForm .submitForm{
+        margin: 20px 0;
+        text-transform: uppercase;
+        padding: 10px 55px;
+        font-size: x-small;
+    }
+    .slider .switchLeft{
+        border: 1px solid #fff;
+        width: 45%;
+    }
+}

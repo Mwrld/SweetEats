@@ -1,0 +1,86 @@
+.cartWish{
+    width: 100%;
+    height: fit-content;
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    box-shadow: 0 0 5px rgb(206, 206, 206);
+    border-radius: 2px;
+}
+.cartWish.dark{
+    background: #131313;
+    box-shadow: none;
+    color: #fff;
+}
+.cartWish::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.cartWish.active{
+    display: none;
+}
+.cartWish h2{
+    margin: 20px 0;
+}
+.cartWish .wishLists{
+    width: fit-content;
+    display: flex;
+    padding: 0 10px;
+    padding-left: 0;
+}
+.wishLists .cards{
+    position: relative;
+    width: 250px;
+    height: 220px;
+    border-radius: 5px;
+    /* box-shadow: -3px 3px 3px #cecece; */
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 75% 25%;
+    margin: 10px 20px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .cartWish h2{
+        font-size: large;
+    }
+    .wishLists .cards{
+        position: relative;
+        width: 200px;
+        height: 180px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .wishLists .cards{
+        position: relative;
+        width: 180px;
+        height: 160px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .wishLists .cards{
+        position: relative;
+        width: 160px;
+        height: 140px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .wishLists .cards{
+        position: relative;
+        width: 130px;
+        height: 130px;
+    }
+    .cards .cardDetails{
+        margin-top: 5px;
+    }
+}

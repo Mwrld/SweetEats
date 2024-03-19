@@ -1,0 +1,247 @@
+.getAppBox{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 20px 10%;
+    margin: 90px 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    /* overflow: hidden; */
+}
+.getAppBox::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: #f96400;   
+    z-index: -1;
+    color: #fff;
+}
+.getAppBox h3{
+    color: #fff;
+    font-size: 2.6em;
+    margin-bottom: 20px;
+}
+.getAppBox .Btns{
+    display: flex;
+}
+.Btns .storeApp{
+    width: 120px;
+    height: 30px;
+    margin-right: 3px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background-position: center;
+    background-size: cover;
+}
+.Btns .storeApp.ps{
+    background-image: url(../../assets/images/otherPic/playStore.png);
+}
+.Btns .storeApp.as{
+    background-image: url(../../assets/images/otherPic/appStore.png);
+}
+.getAppBox .getAppRightPic2{
+    position: relative;
+    width: 240px;
+    height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getAppRightPic2 .mainPic{
+    border-radius: 30px;
+    z-index: 1;
+    width: 230px;
+}
+.getAppRightPic2 .phone{
+    border-radius: 25px;
+}
+.phone.phoneL{
+    margin-right: -50px;
+}
+.phone.phoneD{
+    margin-left: -50px;
+    z-index: 0;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    .getAppBox{
+        height: 300px;
+    }       
+    .getAppBox::before{
+        height: 90%;
+    }
+    .getAppBox h3{
+        font-size: x-large;
+        margin-bottom: 20px;
+    }
+    .getAppBox .getAppRightPic2{
+        width: fit-content;
+        height: 140%;
+    }
+    .getAppRightPic2 .mainPic{
+        width: 180px;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .phone.phoneL,
+    .phone.phoneD{
+        width: 150px;
+        height: 80%;
+        border-radius: 20px;
+    }
+    .Btns .storeApp{
+        width: 100px;
+        height: 25px;
+        margin-right: 1px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 900px){
+    .getAppBox{
+        height: 250px;
+    }       
+    .getAppBox::before{
+        height: 90%;
+    }
+    .getAppBox h3{
+        font-size: large;
+        margin-bottom: 20px;
+    }
+    .Btns .storeApp{
+        width: 80px;
+        height: 23px;
+        margin-right: -2px;
+    }
+    .getAppBox .getAppRightPic2{
+        width: fit-content;
+        height: 140%;
+    }
+    .getAppRightPic2 .mainPic{
+        width: 150px;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .phone.phoneL,
+    .phone.phoneD{
+        width: 130px;
+        height: 80%;
+    }
+}
+
+
+
+@media screen and (max-width: 700px){
+    .getAppBox{
+        height: 220px;
+    }       
+    .getAppBox::before{
+        height: 90%;
+    }
+    .getAppBox h3{
+        font-size: medium;
+        margin-bottom: 10px;
+    }
+    .Btns .storeApp{
+        width: 65px;
+        height: 15px;
+        margin-right: -2px;
+    }
+    .getAppBox .getAppRightPic2{
+        width: fit-content;
+        height: 150%;
+    }
+    .getAppRightPic2 .mainPic{
+        width: 120px;
+        height: 90%;
+        border-radius: 20px;
+    }
+    .phone.phoneL,
+    .phone.phoneD{
+        width: 100px;
+        height: 75%;
+        border-radius: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px){
+    .getAppBox{
+        padding: 20px;
+        height: 180px;
+    }   
+    .getAppBox h3{
+        font-size: small;
+        margin-bottom: 5px;
+    }
+    .Btns .storeApp{
+        width: 55px;
+        height: 15px;
+        margin-right: -2px;
+    }
+    .getAppBox .getAppRightPic2{
+        width: fit-content;
+        height: 140%;
+    }
+    .getAppRightPic2 .mainPic{
+        width: 100px;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .phone.phoneL,
+    .phone.phoneD{
+        width: 100px;
+        height: 85%;
+        border-radius: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px){
+    .getAppBox{
+        padding: 20px 10px;
+        height: 140px;
+    }   
+    .getAppBox h3{
+        font-size: x-small;
+        margin-bottom: 5px;
+    }
+    .Btns .storeApp{
+        width: 40px;
+        height: 15px;
+        margin-right: -2px;
+    }
+    .getAppBox .getAppRightPic2{
+        width: fit-content;
+        height: 140%;
+    }
+    .getAppRightPic2 .mainPic{
+        width: 80px;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .phone.phoneL,
+    .phone.phoneD{
+        width: 80px;
+        height: 90%;
+        border-radius: 12px;
+    }
+    .phone.phoneL{
+        margin-right: -45px;
+    }
+    .phone.phoneD{
+        margin-left: -45px;
+        z-index: 0;
+    }
+}

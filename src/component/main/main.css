@@ -1,0 +1,510 @@
+.main{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: linear-gradient(90deg, #fff, #fff 74%, #ff8500 74%); */
+    display: flex;
+    z-index: -1;
+}
+.main .mainCircle{
+    position: absolute;
+    top: -250px;
+    right: -150px;
+    width: 600px;
+    height: 600px;
+    border: 45px solid rgb(249, 100, 0, 0.4);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.main .mainSquare{
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    width: 33%;
+    height: 760px;
+    /* background: #f96400; */
+    background: #ff8500;
+    z-index: -1;
+}
+.main .main-right{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+}
+.main .main-left{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+.main-left .title{
+    letter-spacing: 2px;
+    margin-left: 20%;
+    font-size: 3.6rem;
+    font-weight: bolder;
+    -webkit-text-stroke: 1.5px #000;
+}
+.main.dark .main-left .title{
+    color: #fff;
+    -webkit-text-stroke: 1.5px #fff;
+}
+.title span{
+    color: #ff8500;
+    -webkit-text-stroke: 1.5px #ff8500;
+}
+.main-left .motto{
+    margin: 30px 0 30px 20%;
+}
+.main.dark .main-left .motto{
+    color: #fff;
+}
+.main-left .search-container{
+    position: relative;
+    margin-left: 20%;
+    border-radius: 2px;
+    width: fit-content;
+    padding: 0;
+    display: flex;
+}
+.search-container input{
+    padding: 10px 20px;
+    box-shadow: 0 3px 3px #cecece;
+    border: none;
+    outline: none;
+    margin-right: 0px;
+    background-color: transparent;
+}
+.main.dark .search-container input{
+    color: #fff;
+    box-shadow: 0 3px 3px #202020;
+}
+.main.dark .search-container .submitSearch{
+    box-shadow: 0 3px 3px #202020;
+}
+.search-container .submitSearch{
+    box-shadow: 0 3px 3px #cecece;
+    right: -73px;
+    padding: 5px 20px;
+    width: fit-content;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 2px;
+    /* background: #ff3400; */
+    background: #f96400;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+}
+.submitSearch .search-icon{
+    height: 120%;
+    width: 150%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+    pointer-events: none;
+}
+.main-right img{
+    width: 95%;
+}
+
+.main .main-social{
+    position: absolute;
+    bottom: -30px;
+    right: 10%;
+    display: flex;
+}
+.main-social .link{
+    margin-right: 17px;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    background: #f89933;
+    cursor: pointer;
+}
+.main-social .link .social-logo-icon{
+    height: 65%;
+    filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(312deg) brightness(100%) contrast(101%);  
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .main-left .title{
+        font-size: 3rem;
+    }
+    .main .main-left{
+        width: 45%;
+    }
+    .main .main-right{
+        width: 55%;
+    }
+    .main-left .motto{
+        font-size: small;
+    }
+    .search-container input{
+        padding: 3px 0;
+        padding-left: 15px;
+        font-size: small;
+    }
+    .search-container .submitSearch{
+        padding: 5px;
+        width: 60px;
+        height: 30px;
+    }
+    .submitSearch .search-icon{
+        height: 120%;
+        width: 150%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    .main-right img{
+        width: 110%;
+    }
+    .main-left .title{
+        font-size: 2.6rem;
+    }
+    .main .mainCircle{
+        position: absolute;
+        top: -250px;
+        right: -200px;
+        width: 500px;
+        height: 500px;
+        border: 40px solid rgb(249, 100, 0, 0.4);
+    }
+    .search-container .submitSearch{
+        padding: 5px 25px;
+        font-size: x-small;
+        height: 30px;
+    }
+    .main-social .link{
+        margin-right: 10px;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .main-right img{
+        width: 110%;
+    }
+    .main-left .title{
+        font-size: 2.2rem;
+    }
+    .search-container input{
+        padding: 3px 0;
+        padding-left: 15px;
+        font-size: small;
+    }
+    .search-container .submitSearch{
+        padding: 5px;
+        width: 55px;
+        height: 30px;
+    }
+    .submitSearch .search-icon{
+        height: 110%;
+        width: 150%;
+    }
+    .search-container .submitSearch{
+        padding: 5px 25px;
+        font-size: x-small;
+        height: 30px;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .main-right img{
+        width: 110%;
+        margin-top: -20px;
+    }
+    .main-left .title{
+        font-size: 1.7rem;
+    }
+    .main-left .motto{
+        margin: 20px 0 20px 20%;
+        font-size: x-small;
+    }
+    .search-container input{
+        padding: 3px 0;
+        padding-left: 15px;
+        font-size: x-small;
+    }
+    .search-container .submitSearch{
+        padding: 5px;
+        width: 50px;
+        height: 25px;
+    }
+    .submitSearch .search-icon{
+        height: 110%;
+        width: 150%;
+    }
+    .main .mainCircle{
+        position: absolute;
+        top: -250px;
+        right: -150px;
+        width: 450px;
+        height: 450px;
+        border: 40px solid rgb(249, 100, 0, 0.4);
+    }
+    .search-container .submitSearch{
+        padding: 5px 25px;
+        color: #fff;
+        font-size: x-small;
+    }
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+    .main-right img{
+        width: 110%;
+        margin-top: -20px;
+    }
+    .main-left .title{
+        font-size: 1.7rem;
+        margin-left: 5%;
+    }
+    .main-left .motto{
+        margin: 20px 0 20px 5%;
+        font-size: x-small;
+    }
+    .main-left .search-container{
+        margin-left: 5%;
+        padding: 4px;
+    }
+    .search-container input{
+        padding: 0px 0;
+        padding-left: 12px;
+        font-size: x-small;
+    }
+    .search-container .submitSearch{
+        padding: 5px;
+        width: 40px;
+        height: 20px;
+    }
+    .submitSearch .search-icon{
+        height: 130%;
+        width: 150%;
+    }
+    .main .mainCircle{
+        position: absolute;
+        top: -230px;
+        right: -150px;
+        width: 400px;
+        height: 400px;
+        border: 30px solid rgb(249, 100, 0, 0.4);
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .search-container .submitSearch{
+        padding: 6px 25px;
+        color: #fff;
+        font-size: xx-small;
+        height: fit-content;
+    }
+    .main-social .link{
+        margin-right: 8px;
+        height: 15px;
+        width: 15px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+    .main{
+        padding-top: 20px;
+    }
+    .main-right img{
+        width: 120%;
+        margin-top: -40px;
+    }
+    .main-left .title{
+        font-size: 1.4rem;
+        margin-left: 5%;
+        -webkit-text-stroke: 1px #000;
+    }
+    .title span{
+        color: #ff8500;
+        -webkit-text-stroke: 1px #ff8500;
+    }
+    .main-left .motto{
+        margin: 20px 20px 20px 5%;
+        font-size: xx-small;
+    }
+    .main-left .search-container{
+        margin-left: 5%;
+        padding: 4px;
+    }
+    .search-container input{
+        padding: 0;
+        padding-left: 12px;
+        font-size: x-small;
+        width: 120px;
+    }
+    .search-container .submitSearch{
+        padding: 5px;
+        width: 40px;
+        height: 19px;
+    }
+    .submitSearch .search-icon{
+        height: 130%;
+        width: 150%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .main{
+        padding-top: 15px;
+    }
+    .main-right img{
+        width: 125%;
+        margin-top: -40px;
+    }
+    .main-left .title{
+        font-size: 1.3rem;
+        margin-left: 5%;
+        -webkit-text-stroke: 1px #000;
+    }
+    .title span{
+        color: #ff8500;
+        -webkit-text-stroke: 1px #ff8500;
+    }
+    .main-left .motto{
+        margin: 20px 20px 20px 5%;
+        font-size: xx-small;
+    }
+    .main-left .search-container{
+        margin-left: 5%;
+        padding: 3px;
+    }
+    .search-container input{
+        padding: 0;
+        padding-left: 10px;
+        font-size: xx-small;
+        width: 100px;
+    }
+    .main .mainCircle{
+        position: absolute;
+        top: -230px;
+        right: -150px;
+        width: 350px;
+        height: 350px;
+        border: 25px solid rgb(249, 100, 0, 0.4);
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .main-left .search-container{
+        display: none;
+    }
+    .submitSearch .search-icon{
+        height: 170%;
+        width: 160%;
+    }
+    .main{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .main{
+        padding-top: 10px;
+    }
+    .main-right img{
+        width: 125%;
+        margin-top: -40px;
+    }
+    .main-left .title{
+        font-size: 0.9rem;
+        margin-left: 5%;
+        -webkit-text-stroke: 1px #000;
+    }
+    .title span{
+        color: #ff8500;
+        -webkit-text-stroke: 1px #ff8500;
+    }
+    .main-left .motto{
+        margin: 15px 20px 20px 5%;
+        font-size: xx-small;
+    }
+    .search-container input{
+        padding: 0;
+        padding-left: 10px;
+        font-size: xx-small;
+        width: 80px;
+    }
+    .main .mainCircle{
+        position: absolute;
+        top: -200px;
+        right: -150px;
+        width: 300px;
+        height: 300px;
+        border: 15px solid rgb(249, 100, 0, 0.4);
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+
+
+
+@media screen and (max-width: 300px) {
+    .main{
+        padding-top: 10px;
+    }
+    .main-right img{
+        width: 125%;
+        margin-top: -40px;
+    }
+    .main-left .title{
+        font-size: 0.7rem;
+        margin-left: 5%;
+        -webkit-text-stroke: 1px #000;
+    }
+    .title span{
+        color: #ff8500;
+        -webkit-text-stroke: 1px #ff8500;
+    }
+    .main-left .motto{
+        margin: 10px 20px 20px 5%;
+        font-size: 7px;
+    }
+}

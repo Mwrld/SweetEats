@@ -1,0 +1,111 @@
+.reviewCard{
+    width: 29%;
+    height: 200px;
+    box-shadow: -3px 3px 3px rgb(206, 206, 206, 0.2);
+    border-radius: 2px;
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    overflow: hidden;
+    padding: 20px;
+    margin: 30px 10px;
+    cursor: pointer;
+}
+.reviewCard:hover,
+.reviewCard:active{
+    background: #f96400;
+    color: #fff;
+}
+.reviewCard .cPic{
+    overflow: hidden;
+}
+.reviewCard img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.reviewCard .cReview{
+    position: relative;
+    height: 100%;
+    font-size: small;
+}
+.cReview p{
+    height: 90%;
+}
+.cReview h4{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-size: x-small;
+}
+
+
+
+@media screen and (max-width: 850px){
+    .reviewCard{
+        width: 40%;
+        height: 180px;
+        padding: 10px 20px;
+        margin: 30px 20px 30px 10px;
+    }   
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .reviewCard{
+        width: 45%;
+        height: 180px;
+        padding: 10px 20px;
+        margin: 30px 20px 30px 10px;
+    }   
+    .reviewCard img{
+        position: relative;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+@media screen and (max-width: 740px){
+    .reviewCard{
+        width: 42%;
+        height: 160px;
+        padding: 10px 20px;
+        margin: 30px 20px 30px 10px;
+    }   
+    .reviewCard .cReview{
+        position: relative;
+        height: 100%;
+        font-size: xx-small;
+    }
+    .reviewCard img{
+        position: relative;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    .reviewCard{
+        width: 42%;
+        height: 170px;
+        padding: 20px 15px;
+        margin: 30px 20px 30px 10px;
+    }   
+}
+@media screen and (max-width: 600px){
+    .reviewCard{
+        width: 100%;
+        height: 160px;
+        margin: 30px 20px 30px 10px;
+    }   
+}

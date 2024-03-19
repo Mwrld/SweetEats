@@ -1,0 +1,48 @@
+.checkOutBox{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 10%;
+}
+.checkOutBox.dark{
+    color: #fff;
+}
+.checkOutBox::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.checkOutBox .checkOutMain{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .checkOutBox{
+        padding: 0px;
+    }
+    .checkOutBox h2{
+        font-size: x-large;
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .checkOutBox .checkOutMain{
+        display: flex;
+        flex-direction: column;
+    }
+    .checkOutBox{
+        padding: 0 20px;
+    }
+    .checkOutBox h2{
+        font-size: large;
+        margin-left: 10px;
+    }
+    
+}

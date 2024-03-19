@@ -1,0 +1,313 @@
+.menuBox{
+    width: 100%;
+    height: 90%;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    margin-right: 300px;
+    padding-left: 10%;
+    padding-right: 300px;
+    margin-bottom: 20px;
+}
+.menuBox::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.menuBox.active{
+    margin-right: 0;
+    padding-right: 0;
+}
+.menuBox .menuSearchBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 300px;
+    justify-content: space-between;
+    display: flex;
+    background: rgb(206, 206, 206, 0.15);
+    padding: 5px;
+    box-shadow: 0 3px 3px #cecece;
+    border-radius: 1.5px;
+}
+.menuBox.dark .menuSearchBox{
+    background: rgb(206, 206, 206, 0.15);
+    box-shadow: 0 3px 3px rgb(255, 255, 255, 0.2);
+}
+.menuSearchBox input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin: 10px;
+}
+.menuBox.dark .menuSearchBox input{
+    color: #fff;
+}
+.menuSearchBox .filterBtn{
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.filterBtn .filterLogo{
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(312deg) brightness(100%) contrast(101%);   
+}
+
+
+
+
+
+.menuBar{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menuBar .menuCategory{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    display: flex;
+    font-size: 11px;
+    margin: 2px;
+    border: none;
+    outline: none;
+    /* box-shadow: 0 0 3px #cecece; */
+    background: #fff;
+}
+.menuBox.dark .menuCategory{
+    background: transparent;
+    color: #fff;
+}
+.menuBox.dark .menuCategory.active,
+.menuCategory.active{
+    color: #fff;
+    border-radius: 2px;
+    background: #f96400;
+}
+.menuCategory .menu-logo-icon{
+    height: 50%;
+    filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(312deg) brightness(103%) contrast(107%);
+}
+.menuBox.dark .menuCategory .menu-logo-icon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+}
+.menuCategory.active .menu-logo-icon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);
+}
+
+
+.menuBox .menuList{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* .menuCards .cardimg{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+.cardimg img{
+    width: 100%;
+}
+.menuCards .menuCardDetails{
+    position: relative;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 10px 30px;
+}
+.menuCardDetails h3{
+    font-size: small;
+    font-weight: bolder;
+    line-height: 0;
+    margin-bottom: 5px;
+}
+.menuCardDetails p{
+    font-size: x-small;
+    font-weight: bold;
+}
+.menuCardDetails .addToMenuCart{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: #ff3400;
+    display: flex;
+    cursor: pointer;
+}
+.addToMenuCart .cart-icon{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px #fff;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+} */
+
+
+
+.menuBox .menuPageBanner{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    margin: 10px 0;
+    border: 5px solid #f96400;
+    overflow: hidden;
+    /* border-radius: 3px; */
+}
+.menuPageBanner img{
+    position: absolute;
+    width: 105%;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .menuBox{
+        margin-right: 250px;
+        padding-left: 10%;
+        padding-right: 250px;
+        font-size: small;
+    }    
+    .menuSearchBox input{
+        padding-left: 15px;
+        font-size: small;
+    }
+    .menuBox .menuBar{
+        position: relative;
+        width: 100%;
+        height: 35px;
+        padding: 0;
+    }    
+    .menuBar .menuCategory{
+        padding: 0px 7px;
+        font-size: x-small;
+    }    
+    .menuCategory .menu-logo-icon{
+        height: 40%;
+    }    
+    .menuList .cards{
+        position: relative;
+        width: 22%;
+        grid-template-rows: 75% 25%;
+        height: 160px;
+        margin: 15px 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .menuBox{
+        margin-right: 240px;
+        padding-left: 10%;
+        padding-right: 240px;
+    }   
+
+    .menuSearchBox input{
+        padding-left: 10px;
+        font-size: x-small;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .menuList .cards{
+        position: relative;
+        width: 30%;
+        grid-template-rows: 75% 25%;
+        height: 130px;
+        margin: 15px 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .menuBox{
+        margin-right: 0px;
+        padding-left: 10%;
+        padding-right: 0px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .menuBox{
+        padding: 0 20px;
+        padding-right: 10px;
+    }
+    .menuBar .menuCategory{
+        padding: 0px 5px;
+        font-size: xx-small;
+    }    
+    .menuCategory .menu-logo-icon{
+        height: 30%;
+    }
+    .menuBox .menuBar{
+        position: relative;
+        width: 100%;
+        height: 30px;
+        padding: 0;
+    }    
+    .menuBox .menuList{
+        justify-content: left;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .menuList .cards{
+        position: relative;
+        width: 46%;
+        grid-template-rows: 70% 30%;
+        height: 120px;
+        margin: 10px 5px;
+    }
+    .menuList .cards .cardimg{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}

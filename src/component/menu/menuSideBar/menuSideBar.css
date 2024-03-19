@@ -1,0 +1,315 @@
+.menuContainer{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+}
+.menuContainer.dark{
+    background: #0e0e0e;
+}
+.sideBar{
+    position: absolute;
+    top: 40px;
+    height: 65px;
+    left: 10%;
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+}
+.sideBar .category{
+    width: 20%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    display: flex;
+    font-size: 11px;
+    margin: 10px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.category .side-logo-icon{
+    height: 20px;
+    filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(312deg) brightness(103%) contrast(107%);
+    pointer-events: none;
+}
+.menuContainer.dark .category{
+    color: #fff;
+}
+.menuContainer.dark .category .side-logo-icon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+}
+.category .drinks{
+    filter: none;
+}
+.menuContainer.dark .category.active,
+.category.active{
+    color: #ff8500;
+    border-bottom: 2px solid #ff8500;
+    /* background: #ff8500; */
+}
+.menuContainer.dark .category.active .side-logo-icon,
+.category.active .side-logo-icon{
+    filter: invert(35%) sepia(75%) saturate(6146%) hue-rotate(7deg) brightness(103%) contrast(105%);
+}
+
+.menuContainer .seeMore{
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: -2px 2px 3px #cecece;
+    margin: 40px;
+    background: #ff8500;
+}
+.menuContainer .menuTopic{
+    width: 100%;
+    padding-left: 10%;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+.menuContainer.dark .menuTopic{
+    color: #fff;
+}
+.menuTopic span{
+    color: #ff8500;
+}
+.menuContainer .menuSubHead{
+    margin-bottom: 50px;
+    font-size: small;
+    width: 50%;
+    text-align: center;
+}
+.menuContainer .menu{
+    width: 90%;
+    margin-left: 10%;
+    height: 90%;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.menu .menu-list{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    overflow: hidden;
+}
+.menu-list::before{
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 40%;
+    border-radius: 10px;
+    height: 100px;
+    width: 3px;
+    background: #ff8500;
+}
+.book{
+    position: relative;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0px 40px;
+    height: 45px;
+    font-size: small;
+    display: flex;
+    background: #f96400;
+    border: none;
+    outline: none;
+}
+.book a{
+    color: #fff;
+    text-decoration: none;
+}
+.book section{
+    position: absolute;
+    background: #fd9651;
+    right: -50px;
+    top: 0;
+    height: 45px;
+    width: 55px;
+    display: flex;
+}
+.next-icon{
+    width: 60%;
+    margin-left: 15%;
+    margin-right: 10px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);
+    pointer-events: none;
+}
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    .menuContainer .seeMore{
+        padding: 8px 20px;
+        color: #fff;
+        font-size: small;
+        margin: 40px;
+    }
+    .category .side-logo-icon{
+        height: 20px;
+    }
+    .category h3{
+        font-size: small;
+    }
+    .book{
+        margin-top: 50px;
+        padding: 0px 20px;
+        height: 40px;
+    }
+    .book a{
+        font-size: x-small;
+    }
+    .book section{
+        right: -50px;
+        height: 40px;
+        width: 50px;
+    }
+    .next-icon{
+        width: 55%;
+        margin-left: 20%;
+        margin-right: 10px;
+    }
+    .Booking .form .fill{
+        width: fit-content;
+        margin: 0 30px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .sideBarContain{
+        position: absolute;
+        top: 30px;
+        padding: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin: 0;
+    }
+    .sideBarContain::-webkit-scrollbar{
+        -webkit-appearance: none;
+    }
+    .sideBar{
+        position: relative;
+        width: fit-content;
+        top: 0;
+        left: 0;
+        /* overflow: hidden;
+        display: flex;
+        flex-wrap: wrap; */
+        margin: 0px;
+        padding: 0px 10px;
+    }
+    .menu .menu-list{
+        margin-top: 40px;
+    }
+    .menuContainer .menuTopic{
+        width: 100%;
+        padding-left: 20px;
+        font-size: large;
+        margin-bottom: 10px;
+    }
+    .menuContainer{
+        margin-top: 0px;
+        justify-content: left;
+        align-items: start;
+        display: flex;
+    }
+    .sideBar .category{
+        padding: 0px 5px;
+    }
+    .menuContainer .menu{
+        width: 100%;
+        margin-left: 15px;
+    }   
+    .category .side-logo-icon{
+        height: 13px;
+    }
+    .category h3{
+        font-size: small;
+    }
+    .menuContainer .seeMore{
+        padding: 8px 20px;
+        color: #fff;
+        font-size: x-small;
+        margin: 30px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .book{
+        margin-top: 40px;
+        padding: 0px 20px;
+        height: 35px;
+        font-size: xx-small;
+    }
+    .book section{
+        right: -40px;
+        height: 35px;
+        width: 40px;
+    }
+    .next-icon{
+        width: 55%;
+        margin-left: 20%;
+        margin-right: 10px;
+    }  
+}
+@media screen and (max-width: 550px) {
+    .book{
+        margin-left: 20px;
+        margin-top: 35px;
+        padding: 0px 15px;
+        height: 30px;
+    }
+    .book a{
+        font-size: xx-small;
+    }
+    .book section{
+        right: -35px;
+        height: 30px;
+        width: 35px;
+    }
+    .next-icon{
+        width: 50%;
+        margin-left: 20%;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .sideBar .category{
+        width: 100px;
+        margin: 0;
+    }    
+}
+@media screen and (max-width: 350px) {
+    .category .side-logo-icon{
+        height: 10px;
+        filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(312deg) brightness(103%) contrast(107%);
+        pointer-events: none;
+    }   
+    .category h3{
+        font-size: x-small;
+    }
+}

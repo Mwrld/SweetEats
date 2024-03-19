@@ -1,0 +1,128 @@
+.cards{
+    position: relative;
+    width: 31%;
+    height: 220px;
+    border-radius: 5px;
+    /* box-shadow: -3px 3px 3px #cecece; */
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 75% 25%;
+    margin: 10px;
+}
+.cards.dark{
+    color: #fff;
+}
+.wishListBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: x-large;
+    cursor: pointer;
+}
+.wishListBtn.active{
+    background: #f96400;
+}
+.wishListBtn .wishIcon{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px #fff;
+    filter: invert(35%) sepia(75%) saturate(6146%) hue-rotate(7deg) brightness(103%) contrast(105%);
+    z-index: 1;
+    pointer-events: none;
+}
+.wishListBtn.active .wishIcon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+}
+.cards .cardimg{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.cardimg img{
+    width: 100%;
+    border-radius: 7px;
+}
+.cards .cardDetails{
+    position: relative;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 10px 10px;
+}
+.cardDetails h3{
+    font-size: small;
+    font-weight: bolder;
+    line-height: 0;
+    margin-bottom: 5px;
+}
+.cards.dark .cardDetails h3{
+    color: #fff;
+}
+.cardDetails p{
+    font-size: x-small;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.cards.dark .cardDetails p{
+    color: #fff;
+}
+.cardDetails .addToCart{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: #ff3400;
+    display: flex;
+    cursor: pointer;
+}
+.addToCart .cart-icon{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px #fff;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+    z-index: 2;
+    pointer-events: none;
+}
+.addToCart.active{
+    background: none;
+    width: fit-content;
+    height: 20px;
+}
+.addToCart.active input{
+    text-align: center;
+    width: 35px;
+    padding: 0 5px;
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+.addToCart.active .cartBtn{
+    padding: 0 7px;
+    height: 20px;
+    background: #ff3400;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+

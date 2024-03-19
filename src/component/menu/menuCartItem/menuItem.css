@@ -1,0 +1,117 @@
+.orderList{
+    position: relative;
+    width: 100%;
+    height: 43%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.orderList::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.orderList .order{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    /* align-items: center; */
+    display: flex;
+    margin: 10px 5px;
+    padding: 5px 0px;
+    border-radius: 4px;
+}
+.order .orderImg{
+    width: 75px;
+    height: 70px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+.orderImg img{
+    width: 100%;
+    border-radius: 3px;
+}
+.order .orderMainDetails{
+    position: relative;
+    margin-top: 5px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.orderMainDetails h3{
+    font-size: small;
+    margin-top: 5px;
+}
+.order.dark .orderMainDetails h3{
+    color: #fff;
+}
+.order section{
+    top: 25px;
+    right: 10px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+}
+.order section button{
+    background: #ff8400;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    outline: none;
+}
+.order section input{
+    width: 35px;
+    text-align: center;
+    padding: 0 5px;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.order.dark section input{
+    color: #fff;
+}
+.order .price{
+   font-size: x-small;
+   margin-top: 10px;
+   font-weight: 100;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .order .orderImg{
+        width: 70px;
+        height: 65px;
+        border-radius: 2px;
+    }   
+    .orderList .order{
+        height: 70px;
+    }
+    .orderMainDetails h3{
+        font-size: x-small;
+        margin-top: 10px;
+    }
+    .order .price{
+        font-size: x-small;
+        margin-top: 7px;
+     }
+     .order section input{
+        background: transparent;
+        width: 20px;
+        padding: 0 4px;
+        font-size: x-small;
+    }
+    .order section button{
+        width: 13px;
+        height: 13px;
+        font-size: x-small;
+    }
+}

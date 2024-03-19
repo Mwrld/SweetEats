@@ -1,0 +1,383 @@
+:root{
+    --red : #f00000;
+    --orangeMain : #f96400;
+}
+
+.homeAboutBox{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    padding-left: 10%;
+    height: 570px;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    /* background: #f96400; */
+    background: #ff8500;
+}
+.homeAboutBox.dark{
+    background-color: #111111;
+}
+.homeAboutBox .homeAboutImageContainer{
+    width: fit-content;
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+}
+.homeAboutImageContainer .homeAboutImages{
+    width: 250px;
+    height: 90%;
+    overflow: hidden;
+    margin: 0 5px;
+}
+.homeAboutImages .Img1,
+.homeAboutImages .Img4{
+    margin: 10px 0;
+    height: 57%;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    background-position: center;
+}
+.homeAboutImages .Img2,
+.homeAboutImages .Img3{
+    background-position: center;
+    /* border: 2px solid #000; */
+    height: 38%;
+    border-radius: 2px;
+}
+.Img1{
+    background-image: url(../../assets/images/menu\ images/mae-mu-I7A_pHLcQK8-unsplash.jpg);
+    background-size: cover;
+}
+.Img2{
+    background-image: url(../../assets/images/menu\ images/sk-uVPV_nV17Tw-unsplash.jpg);
+    background-size: cover;
+}
+.Img3{
+    background-image: url(../../assets/images/menu\ images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg);
+    background-size: cover;
+}
+.Img4{
+    background-image: url(../../assets/images/menu\ images/luisana-zerpa-MJPr6nOdppw-unsplash.jpg);
+    background-size: cover;
+}
+
+.homeAboutBox .homeAboutInfo{
+    text-align: left;
+    margin-right: 10%;
+    margin-left: 40px;
+    color: #fff;
+    /* transform: translateZ(-10px) scale(1.2); */
+
+}
+.homeAboutInfo h3{
+    font-size: 2.3em;
+    padding-left: 20px;
+    border-left: 3px solid #fff;
+    /* margin-bottom: 40px; */
+}
+.homeAboutInfo .Text{
+    font-size: medium;
+    color: #000;
+    font-weight: 900;
+    margin: 12px 0;
+    padding-left: 20px;
+}
+.homeAboutInfo .subText{
+    padding-left: 20px;
+    font-size: small;
+    margin: 20px 0;
+}
+.homeAboutInfo .subText.none{
+    display: none;
+}
+.homeAboutInfo .moreAbout{
+    margin-top: 20px;
+    background: inherit;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    border-radius: 2px;
+    transition: 400ms ease;
+    margin-left: 20px;
+}
+.moreAbout:hover{
+    background: #fff;
+    border: none;
+    color: #000;
+    border-radius: 1.5px;
+    cursor: pointer;
+}
+.homeAboutBox.dark .homeAboutImages .Img1,
+.homeAboutBox.dark .homeAboutImages .Img4{
+    border: 2px solid #f96400;
+}
+.homeAboutBox.dark .homeAboutImages .Img2,
+.homeAboutBox.dark .homeAboutImages .Img3{
+    border: 2px solid #fff;
+}
+.homeAboutBox.dark .Text{
+    color: #f96400;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .homeAboutBox{
+        width: 100%;
+        height: 450px;
+        display: flex;
+    }
+    .homeAboutBox .homeAboutImageContainer{
+        margin-top: 50px;
+        height: 400px;
+        display: flex;
+    }
+    .homeAboutImageContainer .homeAboutImages{
+        width: 170px;
+        height: 90%;
+    }
+    .homeAboutInfo h3{
+        font-size: xx-large;
+    }
+    .homeAboutInfo .Text{
+        font-size: medium;
+        margin: 7px 0;
+    }
+    .homeAboutInfo .subText{
+        padding-left: 20px;
+        font-size: small;
+        margin: 20px 0;
+    }
+    .homeAboutInfo .moreAbout{
+        margin-top: 20px;
+        background: inherit;
+        padding: 9px 20px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .homeAboutBox{
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+    .homeAboutBox .homeAboutImageContainer{
+        margin-top: 50px;
+        height: 350px;
+        display: flex;
+    }
+    .homeAboutImageContainer .homeAboutImages{
+        width: 140px;
+        height: 90%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .homeAboutBox{
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+    .homeAboutBox .homeAboutImageContainer{
+        margin-top: 50px;
+        height: 350px;
+        display: flex;
+    }
+    .homeAboutImageContainer .homeAboutImages{
+        width: 130px;
+        height: 90%;
+    }
+    .homeAboutInfo h3{
+        font-size: x-large;
+    }
+    .homeAboutInfo .Text{
+        font-size: small;
+        margin: 7px 0;
+    }
+    .homeAboutInfo .subText{
+        padding-left: 20px;
+        font-size: x-small;
+        margin: 20px 0;
+    }
+    .homeAboutInfo .moreAbout{
+        margin-top: 20px;
+        background: inherit;
+        padding: 9px 20px;
+        font-size: x-small;
+    }
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .homeAboutBox{
+        width: 100%;
+        height: 350px;
+        display: flex;
+    }
+    .homeAboutBox .homeAboutImageContainer{
+        margin-top: 50px;
+        height: 300px;
+        display: flex;
+    }
+    .homeAboutImageContainer .homeAboutImages{
+        width: 110px;
+        height: 90%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .homeAboutBox{
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+    .homeAboutBox .homeAboutImageContainer{
+        margin-top: 30px;
+        height: 270px;
+        display: flex;
+    }
+    .homeAboutImageContainer .homeAboutImages{
+        width: 100px;
+        height: 90%;
+    }
+    .homeAboutInfo h3{
+        font-size: large;
+    }
+    .homeAboutInfo .Text{
+        font-size: x-small;
+        margin: 7px 0;
+    }
+    .homeAboutInfo .subText{
+        padding-left: 20px;
+        font-size: xx-small;
+        margin: 20px 0;
+    }
+    .homeAboutInfo .moreAbout{
+        margin-top: 0px;
+        background: inherit;
+        padding: 7px 15px;
+        font-size: xx-small;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .homeAboutBox{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        padding-left: 20px;
+    }
+    .homeAboutBox .homeAboutImageContainer{
+        margin-top: 30px;
+        height: 270px;
+        display: flex;
+    }
+    .homeAboutImageContainer .homeAboutImages{
+        width: 100px;
+        height: 90%;
+    }
+    .homeAboutBox .homeAboutInfo{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .homeAboutInfo h3{
+        font-size: large;
+        padding-left: 15px;
+        border-left: 2px solid #fff;
+    }
+    .homeAboutInfo .Text{
+        font-size: x-small;
+        margin: 7px 0;
+    }
+    .homeAboutInfo .subText{
+        padding-left: 20px;
+        font-size: xx-small;
+        margin: 20px 0;
+    }
+    .homeAboutInfo .moreAbout{
+        margin-top: 0px;
+        background: inherit;
+        padding: 5px 10px;
+        border: 1px solid #fff;
+        font-size: xx-small;
+    }    
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .homeAboutBox{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding: 20px 10px;
+    }
+    .homeAboutBox .homeAboutImageContainer{
+        margin-top: 0px;
+        width: 100%;
+        height: 240px;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .homeAboutImageContainer .homeAboutImages{
+        width: 90%;
+        height: 100%;
+    }
+    .homeAboutBox .homeAboutInfo{
+        text-align: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+        color: #fff;
+    }
+    /* .homeAboutBox{
+        width: 100%;
+        height: 290px;
+        display: flex;
+        padding-left: 20px;
+    }
+    .homeAboutBox .homeAboutImageContainer{
+        margin-top: 30px;
+        height: 260px;
+        display: flex;
+    }
+    .homeAboutImageContainer .homeAboutImages{
+        width: 90px;
+        height: 90%;
+    }
+    .homeAboutBox .homeAboutInfo{
+        margin-right: 20px;
+        margin-left: 10px;
+    } */
+}
+
+
+
+

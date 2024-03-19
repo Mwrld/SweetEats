@@ -1,0 +1,34 @@
+.reviewBox{
+    width: 100%;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+.reviewBox .reviews{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.reviewBox.dark .menuTopic{
+    color: #fff;
+    font-size: x-large;
+}
+.menuTopic span{
+    color: #f96400;
+}
+.reviewBox.dark .reviewCard{
+    box-shadow: -3px 3px 3px #161616;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 550px){
+    .reviewBox{
+        width: 100%;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,273 @@
+
+.cartPage .cartPageContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.cartPageContainer .cartPageList{
+    position: relative;
+    width: 75%;
+    height: 550px;
+    background: #fff;
+    box-shadow: 0 0 5px #cecece;
+    border-radius: 2px;
+    padding: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    margin: 0;
+}
+.cartPageContainer.dark .cartPageList{
+    background: #131313;
+    box-shadow: none;
+}
+.cartPageList::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 4px;
+}
+.cartPageList::-webkit-scrollbar-thumb{
+    -webkit-appearance: none;
+    background: #cecece;
+}
+.cartPageContainer.dark .cartPageList::-webkit-scrollbar-thumb{
+    -webkit-appearance: none;
+    background: #252525;
+}
+.cartPageList .zeroCartBox{
+    position: absolute;
+    display: none;
+    z-index: -10;
+}
+.cartPageList.active{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cartPageList.active .zeroCartBox{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    font-weight: 600;
+    
+}
+.cartPageContainer.dark .cartPageList h2{
+    color: #fff;
+}
+.cartPageList.active .zeroCartBox .zeroCartLogo{
+    margin-bottom: 10px;
+    width: 35%;
+    transform: rotate(-25deg);
+    opacity: 0.25;
+}
+.zeroCartBox p{
+    opacity: 0.25;
+}
+.cartPageContainer.dark .zeroCartBox p{
+    color: #fff;
+}
+.zeroCartBox button{
+    color: #fff;
+    background: #f96400;
+    margin: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 3px #cecece;
+}
+
+.cartPageList h2{
+    display: block;
+    margin-top: 15px;
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.cartPageList.active h2{
+    display: none;
+}
+
+
+
+.cartPageContainer .orderSummary{
+    padding-top: 20px;
+    width: 25%;
+    height: fit-content;
+    margin-left: 20px;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 0 5px #cecece;
+    border-radius: 2px;
+}
+.cartPageContainer.dark .orderSummary{
+    background: #131313;
+    box-shadow: none;
+}
+.orderSummary h2{
+    margin: 5px 0 35px 0;
+}
+.cartPageContainer.dark .orderSummary h2{
+    color: #fff;
+}
+.orderSummary .submitOrder.active{
+    background: rgb(249, 100, 0, 0.5);
+}
+.cartPageContainer.dark .subTotal,
+.cartPageContainer.dark .subTotal span{
+    color: #fff;
+}
+.subTotal .discount{
+    position: absolute;
+    left: 45px;
+    top: 0;
+    font-size: x-small;
+    color: #ff0000;
+    display: flex;
+}
+.discount.active{
+    display: none;
+}
+.cartPageContainer.dark .orderSummary input{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .cartPageList h2{
+        display: block;
+        margin-top: 15px;
+        font-size: large;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .cartPageContainer .cartPageList{
+        width: 70%;
+        height: 550px;
+    }       
+    .cartPageContainer .orderSummary{
+        padding-top: 20px;
+        width: 30%;
+    }    
+    .orderSummary .subTotal {
+        padding: 0 5px;
+        margin-bottom: 10px;
+        font-size: small;
+    }
+    .orderSummary .couponContain,
+    .couponContain input {
+        font-size: small;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .cartPageList.active .zeroCartBox .zeroCartLogo{
+        margin-bottom: 10px;
+        width: 30%;
+    }
+    .zeroCartBox p{
+        opacity: 0.25;
+        font-size: small;
+    }
+    .zeroCartBox button{
+        font-size: small;
+        margin: 20px;
+        border: none;
+        padding: 10px 15px;
+    }
+    .cartPageContainer .orderSummary{
+        padding: 15px;
+    }
+    .orderSummary h2{
+        font-size: large;
+    }
+    .orderSummary .submitOrder{
+        font-size: small;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .cartPageContainer .cartPageList{
+        width: 65%;
+        height: 550px;
+    }       
+    .cartPageContainer .orderSummary{
+        padding-top: 20px;
+        width: 35%;
+    }    
+    .cartPageList.active .zeroCartBox .zeroCartLogo{
+        margin-bottom: 10px;
+        width: 30%;
+    }
+    .zeroCartBox p{
+        opacity: 0.25;
+        font-size: small;
+    }
+    .zeroCartBox button{
+        font-size: x-small;
+        margin: 15px;
+        border: none;
+        padding: 8px 10px;
+    }
+    .orderSummary .submitOrder{
+        font-size: x-small;
+    }
+    .orderSummary .subTotal {
+        padding: 0 5px;
+        margin-bottom: 10px;
+        font-size: x-small;
+    }
+    .orderSummary .couponContain,
+    .couponContain input {
+        font-size: x-small;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .cartPage .cartPageContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .cartPageContainer .cartPageList{
+        width: 100%;
+        height: 550px;
+    }       
+    .cartPageContainer .orderSummary{
+        padding-top: 20px;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }    
+    .cartPageList.active .zeroCartBox .zeroCartLogo{
+        margin-bottom: 10px;
+        width: 30%;
+    }
+    .zeroCartBox p{
+        opacity: 0.25;
+        font-size: small;
+    }
+    .zeroCartBox button{
+        font-size: x-small;
+        margin: 15px;
+        border: none;
+        padding: 8px 10px;
+    }
+}

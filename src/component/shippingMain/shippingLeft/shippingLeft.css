@@ -1,0 +1,235 @@
+.shippingMain .shippingMainLeft{
+    width: 100%;
+    box-shadow: 1px 0px 3px rgb(206, 206, 206, 0.3);
+    padding: 10px 0;
+}
+.shippingPageContainer.dark .shippingMain,
+.shippingPageContainer.dark .shippingMainLeft{
+    box-shadow: 1px 0px 3px rgb(206, 206, 206, 0.1);
+}
+.shippingMainLeft .leftTop{
+    margin: 15px 0;
+}
+.shippingPageContainer.dark .leftTop h3{
+    color: #fff;
+}
+.leftTop span{
+    color: #cecece;
+    font-size: small;
+}
+.shippingMainLeft .mapContain{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin: 20px 0;
+    box-shadow: 0 0px 3px rgb(206, 206, 206, 0.3);
+}
+.mapContain .map{
+    position: absolute;
+    background: #cecece;
+    width: 120%;
+    height: 100%;
+    left: -20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+.map .addressMap{
+    width: 160%;
+    height: 160%;
+}
+.shippingMainLeft .addressInfo{
+    width: 100%;
+    padding: 0 20px;
+    margin: 60px 0 20px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.addressInfo .addressLeft{
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+}
+.addressLeft h4{
+    margin-bottom: 30px;
+    color: #3d3d3d;
+}
+.shippingPageContainer.dark .addressLeft h4{
+    color: #cecece;
+}
+.addressLeft form{
+    display: flex;
+    flex-direction: column;
+}
+.addressLeft form select{
+    color: #7d7d7d;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 3px #cecece;
+}
+.addressInfo .addressRight{
+    height: fit-content;
+    display: flex;
+    padding-top: 40px;
+    padding-left: 30px;
+    box-shadow: -2px 0px 2px rgb(206, 206, 206, 0.3);
+}
+.shippingPageContainer.dark .addressLeft form select,
+.shippingPageContainer.dark .addressInfo .addressRight{
+    color: #fff;
+    background: transparent;
+    box-shadow: 0 1px 3px #131313;
+}
+.shippingPageContainer.dark .addressLeft form select option{
+    color: #000;
+}
+.addressRight .addressRightInfo{
+    height: 150px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    color: #7d7d7d;
+    font-size: small;
+}
+.shippingPageContainer.dark .addressRight .addressRightInfo h3{
+    color: #fff;
+}
+
+.addressRightInfo section span{
+}
+.addressRight .illustrate{
+    height: 150px;
+    width: 40px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+.illustrate span{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #cecece;
+    filter: blur(1.5px);
+}
+.illustrate .green{
+    width: 12px;
+    height: 12px;
+    background: #00cf00;
+    filter: blur(3px);
+}
+.illustrate .red{
+    width: 12px;
+    height: 12px;
+    background: #ff0000;
+    filter: blur(3px);
+}
+.addressRightInfo section h3{
+    position: relative;
+    color: #3d3d3d;
+    margin-bottom: 25px;
+}
+.addressRightInfo section h3 span{
+    margin-left: 25px;
+}
+.addressRightInfo section h3 .address-logo-icon{
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 20px;
+    margin-top: 2px;
+    font-weight: bolder;
+    filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(312deg) brightness(100%) contrast(101%);   
+    pointer-events: none;
+    opacity: 0.3;
+}
+.shippingPageContainer.dark .addressRightInfo .address-logo-icon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+    /* opacity: 1; */
+}
+
+.addressRightInfo h3{
+    position: relative;
+    color: #3d3d3d;
+    margin-bottom: 25px;
+}
+.addressRightInfo h3 span{
+    margin-left: 25px;
+}
+.addressRightInfo h3 .address-logo-icon{
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 20px;
+    margin-top: 2px;
+    font-weight: bolder;
+    filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(312deg) brightness(100%) contrast(101%);   
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .addressLeft form select{
+        font-size: small;
+    }   
+    .addressRight .addressRightInfo{
+        font-size: small;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .addressInfo .addressLeft{
+        padding-right: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .addressInfo .addressLeft{
+        padding-right: 30px;
+    }
+    .shippingMainLeft .leftTop{
+        font-size: medium;
+    }
+    .leftTop span{
+        color: #cecece;
+        font-size: x-small;
+    }
+    .addressLeft form select{
+        font-size: x-small;
+    }   
+    .addressRight .addressRightInfo{
+        font-size: x-small;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .addressInfo .addressLeft{
+        padding-right: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .shippingMainLeft .addressInfo{
+        display: flex;
+        flex-direction: column;
+    }
+}

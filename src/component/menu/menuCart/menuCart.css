@@ -1,0 +1,277 @@
+.menuCart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background: #f7f7f7; */
+    background: #f3f3f3;
+    z-index: 100;
+    width: 300px;
+    height: 99.5%;
+    padding: 10px;
+}
+.menuCart.dark{
+    background: #1a1919;
+}
+
+.menuCart .menuTop{
+    width: 100%;
+    height: fit-content;
+}
+.menuTop .orderTop{
+    font-size: x-large;
+    margin-top: 10px;
+}
+.menuCart.dark .orderTop{
+    color: #fff;
+}
+.menuTop .orderDetails{
+    margin: 20px 0;
+}
+.orderDetails .infoTopic{
+    font-size: small;
+    margin-bottom: 5px;
+}
+.menuCart.dark .infoTopic{
+    color: #fff;
+}
+.orderDetails .input{
+    position: relative;
+    width: 100%;
+}
+.input input{
+    position: relative;
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+    box-shadow: 0 0 3px rgb(206, 206, 206, 0.5);
+    padding:  8px;
+    outline: none;
+    border-radius: 2px;
+}
+.input button{
+    position: absolute;
+    top: 8.5px;
+    padding: 6px;
+    font-size: x-small;
+    font-weight: bold;
+    color: #000;
+    background: rgb(206, 206, 206, 0.4);
+    border: none;
+    outline: none;
+    right: 4px;
+    border-radius: 2px;
+    width: fit-content;
+    display: none;
+}
+
+
+.menuCart .orderSummary{
+    padding-top: 20px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px -3px 3px rgb(206, 206, 206, 0.2);
+}
+.menuCart.dark .orderSummary{
+    box-shadow: 0px -3px 3px #232323;
+}
+.orderSummary .subTotal{
+    position: relative;
+    width: 100%;
+    padding: 0 5px;
+    color: #7d7d7d;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    display: flex;
+    font-size: small;
+}
+.subTotal span{
+    color: #000;
+}
+.menuCart.dark .subTotal span,
+.menuCart.dark .subTotal{
+    color: #fff;
+}
+.subTotal .discount{
+    position: absolute;
+    left: 45px;
+    top: 0;
+    font-size: x-small;
+    color: #ff0000;
+    display: flex;
+}
+.discount.active{
+    display: none;
+}
+.subTotal.total{
+    font-size: medium;
+    margin: 10px 0;
+}
+.orderSummary .couponContain{
+    position: relative;
+    margin: 15px 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 15px 5px;
+    /* background: rgb(255, 132, 0, 0.5); */
+    background: linear-gradient(125deg, #ffaf5a, #ffaf5a 50%, rgb(255, 132, 0, 0.3) 51%);
+    border-radius: 2px;
+    border: 2px solid #ff8500;
+    font-size: small;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.couponContain input{
+    position: absolute;
+    right: 0;
+    width: 45%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.menuCart.dark .couponContain input{
+    color: #fff;
+}
+
+.orderSummary .submitOrder{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    color: #fff;
+    background: #ff8400;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+.orderSummary .submitOrder.active{
+    background: rgb(249, 100, 0, 0.5);
+}
+
+.menuCart .orderList{
+    position: relative;
+    width: 100%;
+    height: 35%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.orderList::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.orderList .zeroCartBox{
+    position: absolute;
+    display: none;
+    z-index: -10;
+}
+.orderList.active .zeroCartBox{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.zeroCartBox .zeroCartLogo{
+    margin-bottom: 10px;
+    width: 25%;
+}
+.zeroCartBox p{
+    margin-top: 10px;
+}
+.orderList .order{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    /* align-items: center; */
+    display: flex;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+
+.orderDetails form{
+    display: flex;
+    flex-direction: column;
+}
+.orderDetails form select{
+    color: #7d7d7d;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 3px #cecece;
+}
+.menuCart.dark .orderDetails form select{
+    box-shadow: 0 1px 3px #232323;
+    background: transparent;
+    /* color: #fff; */
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .menuCart{
+        position: absolute;
+        width: 250px;
+        height: 99.5%;
+        padding: 10px;
+    }    
+    .menuTop .orderTop{
+        font-size: large;
+        margin-top: 10px;
+    }
+    .orderDetails .infoTopic{
+        font-size: small;
+    }
+    .input input{
+        margin-top: 5px;
+        padding: 6px;
+        font-size: x-small;
+    }
+    .orderSummary .subTotal{
+        padding: 0 5px;
+        margin-bottom: 10px;
+        font-size: x-small;
+    }
+    .subTotal .discount{
+        font-size: xx-small;
+    }
+    .orderSummary .couponContain{
+        font-size: x-small;
+        padding-left: 10px;
+    }
+    .couponContain input{
+        font-size: x-small;
+    }
+    .orderSummary .submitOrder{
+        font-size: small;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .menuCart{
+        position: absolute;
+        width: 240px;
+        height: 99.5%;
+        padding: 10px;
+    }    
+}
+@media screen and (max-width: 700px) {
+    .menuCart{
+        display: none;
+    }    
+}

@@ -1,0 +1,128 @@
+.footerContainer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10%;
+    margin-top: 30px;
+    color: #7d7d7d;
+    margin-bottom: 30px;
+    font-style: medium;
+}
+.footerContainer .footerBottom,
+.footerContainer .footerTop{
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.footerTop .footerLogos{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.footerLogos h5{
+    margin-top: 5px;
+    color: #000;
+}
+.footerContainer.dark .footerLogos h5{
+    color: #fff;
+}
+.footerLogos h5 span{
+    color: #ff8500;
+}
+.footerLinks a{
+    text-decoration: none;
+}
+.footerContainer .footerBottom{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(206, 206, 206, 0.3);
+}
+.footerBottom .socialLinks{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.socialLinks .social-logo-icon{
+    height: 17px;
+    margin-right: 10px;
+    filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(312deg) brightness(100%) contrast(101%);   
+    margin: 0 10px;
+    pointer-events: none;
+}
+.footerContainer.dark .social-logo-icon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(100%);   
+}
+.footerLinks a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: medium;
+}
+.footerContainer.dark .footerLinks a{
+    color: rgb(255, 255, 255, 0.7);
+}
+.footerLinks a.active{
+    color: rgb(0, 0, 0);
+}
+.footerContainer.dark .footerLinks a.active{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+@media screen and (max-width: 900px){
+    .footerContainer{
+        font-size: small;
+    }   
+    .socialLinks .social-logo-icon{
+        height: 13px;
+        margin-right: 7px;
+    }
+}
+
+
+
+@media screen and (max-width: 700px){
+    .footerContainer{
+        font-size: x-small;
+    }  
+    .socialLinks .social-logo-icon{
+        height: 11px;
+        margin-right: 5px;
+    } 
+
+}
+
+
+
+@media screen and (max-width: 550px){
+    .footerContainer{
+        font-size: xx-small;
+        padding: 10px 20px;
+    }  
+    .socialLinks .social-logo-icon{
+        height: 10px;
+        margin-right: 4px;
+    } 
+    .footerBottom .socialLinks{
+        margin-right: 20px;
+    }
+    .footerLinks a{
+        margin: 0 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px){
+    .footerLinks a{
+        margin: 0 2px;
+    }
+}
